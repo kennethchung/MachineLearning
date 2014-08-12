@@ -48,8 +48,15 @@ x = zeros(n, 1);
 %
 %
 
-
-
+for i = 1:n
+   findindex = word_indices(word_indices(:,1)==i);
+   if size(findindex) > 0
+      x(i,:)=1;
+   else
+      x(i,:)=0;
+   end
+   
+end
 
 
 

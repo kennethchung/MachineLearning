@@ -21,6 +21,8 @@ S = zeros(n);
 %
 
 
+[U,S,X]=svd((X' * X)/m);
+
 
 
 
